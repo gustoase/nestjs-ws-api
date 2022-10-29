@@ -1,0 +1,35 @@
+{
+  "name": "@drozd/nestjs-ws-api",
+  "version": "1.0.5",
+  "description": "NestJS WS Rest api adapter",
+  "main": "dist/index",
+  "types": "dist/index",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gustoase/nestjs-ws-api.git"
+  },
+  "author": "Aleksandr Drozdov <bagzon@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustoase/nestjs-ws-api/issues"
+  },
+  "homepage": "https://github.com/gustoase/nestjs-ws-api#readme",
+  "dependencies": {
+    "@nestjs/common": "^9.1.6",
+    "rxjs": "^7.5.7",
+    "@nestjs/platform-express": "^9.1.6",
+    "reflect-metadata": "^0.1.13",
+    "@nestjs/platform-socket.io": "^9.1.6",
+    "socket.io": "^4.5.3",
+    "@nestjs/websockets": "^9.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.7",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.4"
+  }
+}
