@@ -34,7 +34,16 @@ then inside your `app.module.ts` add config:
 export class AppModule {}
 ```
 
-See demo using https://github.com/gustoase/nestjs-ws-api-demo
+And more use in controllers
+```javascript
+  @Get(':id')
+  @WsAction('user')
+  getUser(@Param('id', ParseIntPipe) id: number): UserDto {
+    return this.appService.getUser(id);
+  }
+```
+
+See full demo https://github.com/gustoase/nestjs-ws-api-demo
 
 ## License
 MIT
