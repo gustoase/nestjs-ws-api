@@ -1,6 +1,6 @@
 {
   "name": "@drozd/nestjs-ws-api",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "NestJS WS Rest api adapter",
   "main": "dist/index",
   "types": "dist/index",
@@ -13,7 +13,7 @@
     "url": "git+ssh://git@github.com/gustoase/nestjs-ws-api.git"
   },
   "author": "Aleksandr Drozdov <bagzon@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/gustoase/nestjs-ws-api/issues"
   },
