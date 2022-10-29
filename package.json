@@ -1,6 +1,6 @@
 {
   "name": "@drozd/nestjs-ws-api",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "NestJS WS Rest api adapter",
   "main": "dist/index",
   "types": "dist/index",

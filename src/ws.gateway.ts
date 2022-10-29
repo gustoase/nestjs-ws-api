@@ -74,6 +74,6 @@ export class WsGateway implements OnGatewayConnection, OnGatewayInit {
     }
 
     // пример передачи на фронт конфига с сервера, так же можно понять что АПИ готово для работы
-    socket.emit('ready', { date: new Date() });
+    socket.emit('ready', { date: new Date(), ...this.options?.publicConfig });
   }
 }
