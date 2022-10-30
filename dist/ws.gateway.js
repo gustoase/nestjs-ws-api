@@ -59,7 +59,7 @@ let WsGateway = WsGateway_1 = class WsGateway {
                 catch (e) {
                     console.error(e);
                     // @ts-ignore
-                    response(e || (e === null || e === void 0 ? void 0 : e.message));
+                    response({ error: e || (e === null || e === void 0 ? void 0 : e.message) });
                 }
             });
         }

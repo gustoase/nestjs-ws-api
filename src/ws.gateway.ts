@@ -67,7 +67,7 @@ export class WsGateway implements OnGatewayConnection, OnGatewayInit {
           } catch (e) {
             console.error(e);
             // @ts-ignore
-            response(e || e?.message);
+            response({ error: e || e?.message });
           }
         },
       );
